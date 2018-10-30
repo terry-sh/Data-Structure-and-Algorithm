@@ -16,7 +16,8 @@ function bubbleSort(list, compare) {
                 swapped = true;
             }
         }
-        // size = size - 1;
+        size = size - 1;
     } while (swapped);
 }
 
+module.exports = bubbleSort;

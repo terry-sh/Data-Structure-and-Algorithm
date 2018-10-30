@@ -19,3 +19,5 @@ function bubbleSort(list, compare) {
         n = newn
     } while (n > 1);
 }
+
+module.exports = bubbleSort;
