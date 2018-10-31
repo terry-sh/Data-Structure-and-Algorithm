@@ -9,6 +9,6 @@ function isGreater(i, j) {
 }
 
 // test:
-const list = [1, 4, 2, 9, 0, 10, 4, 8, -4, 9];
+const list = [-11, 1, 4, 2, 9, 0, 10, 4, 8, -4, 9];
 bubbleSort(list, isGreater);
 console.log(list);

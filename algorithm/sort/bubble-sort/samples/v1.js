@@ -1,10 +1,4 @@
 
-function swap(list, i, j) {
-    let temp = list[i];
-    list[i] = list[j];
-    list[j] = temp;
-}
-
 function bubbleSort(list, compare) {
     let size = list.length;
     let swapped = true;
@@ -12,7 +6,10 @@ function bubbleSort(list, compare) {
         swapped = false;
         for (let i = 1; i <= size - 1; i++) {
             if (!compare(list[i - 1], list[i])) {
-                swap(list, i - 1, i);
+                let temp = list[i - 1];
+                list[i - 1] = list[i];
+                list[i] = temp;
+
                 swapped = true;
             }
         }
