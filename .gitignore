@@ -32,3 +32,7 @@
 *.app
 
 *.tmp
+
+# Node and TypeScript
+node_modules
+*.js
